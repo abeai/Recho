@@ -1,2 +1,2 @@
 # Recho
-A echo REST test service
+A echo REST test service.
