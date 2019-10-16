@@ -1,5 +1,5 @@
 {
-  "name": "recho",
+  "name": "@abeai/recho",
   "version": "1.0.0",
   "description": "A echo REST test service",
   "main": "index.js",
