@@ -9,7 +9,7 @@ All notable changes to this project will be documented in this file.
 
 ##### Engineering Internal
 
--   
+-   Re-Publish initial
 
 ##### Deployment Action Items
 
