@@ -54,6 +54,10 @@ function server(options = {}) {
         res.redirect(req.query.url);
     });
 
+    app.all('/redirect/loop', (req, res) => {
+        reply.redirect('/redirect/loop')
+    });
+
     app.all('/econnreset', (req, res) => {
         req.req.socket.destroy();
     });
