@@ -54,8 +54,12 @@ function server(options = {}) {
         res.redirect(req.query.url);
     });
 
-    app.all('/redirect/loop', (req, res) => {
-        reply.redirect('/redirect/loop')
+    app.all('/redirect/loop/:count', (req, res) => {
+        res.redirect('/redirect/loop/' + (++req.params.count));
+    });
+
+    app.all('/redirect/loop/', (req, res) => {
+        res.redirect('/redirect/loop')
     });
 
     app.all('/econnreset', (req, res) => {
