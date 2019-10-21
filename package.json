@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/abeai/recho/issues"
   },
-  "homepage": "https://github.com/abeai/recho#readme"
+  "homepage": "https://github.com/abeai/recho#readme",
+  "dependencies": {
+    "fastify": "^2.10.0"
+  }
 }

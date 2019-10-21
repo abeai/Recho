@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 
 ## 1.3.0 - Un-released
 
--   
+-   Added fastify [ENG-1114](https://abedev.atlassian.net/browse/ENG-1114)
 
 ##### Engineering Internal
 
