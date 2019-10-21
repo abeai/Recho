@@ -2,6 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
+
 ## 1.3.0 - Un-released
 
 -   
@@ -15,7 +16,8 @@ All notable changes to this project will be documented in this file.
 -   
 
 
-## 1.2.0 - Un-released
+## 1.2.0 -10/21/2019
+
 
 -   Added option to turn off logging  [ENG-1114](https://abedev.atlassian.net/browse/ENG-1114)
 
