@@ -30,6 +30,20 @@ All notable changes to this project will be documented in this file.
 -   
 
 
+## 1.2.0 -10/21/2019
+
+
+-   Added option to turn off logging  [ENG-1114](https://abedev.atlassian.net/browse/ENG-1114)
+
+##### Engineering Internal
+
+-   
+
+##### Deployment Action Items
+
+-   
+
+
 
 ## 1.1.0 - 10/17/2019
 
