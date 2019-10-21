@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.0 - Un-released
+
+-   
+
+##### Engineering Internal
+
+-   
+
+##### Deployment Action Items
+
+-   
+
+
 ## 1.2.0 - Un-released
 
 -   Added option to turn off logging  [ENG-1114](https://abedev.atlassian.net/browse/ENG-1114)
