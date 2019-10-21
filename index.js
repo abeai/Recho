@@ -11,6 +11,7 @@ function server(options = {}) {
         https: false,
         ip: '0.0.0.0',
         port: 4270,
+        log: true
     }, options);
 
     const app = require('fastify')(options);
@@ -18,19 +19,22 @@ function server(options = {}) {
     function response(req, res) {
         var urlParsed = new URL(`${options.https ? 'https' : 'http'}://${options.ip}:${options.port}${req.raw.url}`);
 
-        console.log({
-            body: req.body,
-            query: req.query,
-            params: req.params,
-            url: req.req.url,
-            method: req.raw.method,
-            headers: req.headers,
-            // raw: req.raw,
-            id: req.id,
-            ip: req.ip,
-            ips: req.ips,
-            hostname: req.hostname,
-        });
+        if(options.log) {
+          console.log({
+              body: req.body,
+              query: req.query,
+              params: req.params,
+              url: req.req.url,
+              method: req.raw.method,
+              headers: req.headers,
+              // raw: req.raw,
+              id: req.id,
+              ip: req.ip,
+              ips: req.ips,
+              hostname: req.hostname,
+          });
+        }
+
         res.code(200).send({
             body: req.body,
             query: req.query,
@@ -48,6 +52,10 @@ function server(options = {}) {
 
     app.all('/redirect', (req, res) => {
         res.redirect(req.query.url);
+    });
+
+    app.all('/redirect/loop', (req, res) => {
+        reply.redirect('/redirect/loop')
     });
 
     app.all('/econnreset', (req, res) => {
